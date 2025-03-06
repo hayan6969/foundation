@@ -1,16 +1,37 @@
+'use client'
 import React from 'react'
 import Header from '../components/Header'
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { useForm, SubmitHandler } from "react-hook-form"
+type Inputs = {
+  example: string
+  exampleRequired: string
+}
 
 function page() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm<Inputs>()
+  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
   return (
     <>
     <Header/>
       <section className='w-screen  px-20 max-md:px-10 max-sm:px-4 flex flex-col items-center py-4 bg-white  top-0 text-black pt-24' >
-       <h1 className='text-gray-800 text-[5vw] font-semibold text-center leading-snug border-b-4 p-2 border-gray-300'>We're here to <br /><span className='text-[#9E0C39]' >Help You</span></h1>
+       <h1 className='text-gray-800 text-[5vw] max-md:text-[7vw] max-sm:text-[10vw] font-semibold text-center leading-snug border-b-4 p-2 border-gray-300'>We're here to <br /><span className='text-[#9E0C39]' >Help You</span></h1>
       </section>
        <div className='w-screen min-h-screen relative px-20 max-md:px-10 max-sm:px-4 py-4 text-black  pt-24'>
-        <div className='w-full px-10 py-6 bg-[#9E0C39] text-white text-2xl rounded-lg'>The Red Orchard Foundation was founded with a simple yet profound mission: to create a compassionate world where animals and people in need find hope, healing, and a second chance. What began as a small rescue initiative has grown into a dedicated nonprofit organization supporting animal welfare, veterans, survivors of domestic violence, and grieving families.</div>
-        <div className='w-full absolute left-0 -translate-y-14'>
+        <div className='w-full px-10 py-6 bg-[#9E0C39] text-white text-2xl rounded-lg max-md:text-xl max-sm:text-base max-sm:px-5 max-sm:py-3'>The Red Orchard Foundation was founded with a simple yet profound mission: to create a compassionate world where animals and people in need find hope, healing, and a second chance. What began as a small rescue initiative has grown into a dedicated nonprofit organization supporting animal welfare, veterans, survivors of domestic violence, and grieving families.</div>
+        <div className='w-full absolute left-0 -translate-y-14 max-sm:-translate-y-10'>
         <img src="./Rectangle 62 (3).png" alt="" className='w-full' />
         </div>
        </div>
@@ -5478,6 +5499,48 @@ function page() {
 </div>
 </div>
         </div>
+        <section className='w-screen gap-8  px-20 max-md:px-10 max-sm:px-9 flex flex-col items-center py-4 bg-white  top-0 text-black pt-24'>
+        <h6 className="text-5xl font-semibold text-[#9E0C39]">Our Success Team</h6>
+<div className='w-full'>
+<Carousel
+      opts={{
+        align: "start",
+      }}
+      className="w-full max-md:h-full max-md:w-auto max-sm:px-8 max-sm:mx-8"
+    >
+      <CarouselContent>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index} className="basis-1/3 max-md:basis-1/2 max-sm:basis-1/1">
+            <div className="p-1">
+              <Card className="bg-gray-300">
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-3xl font-semibold">{index + 1}</span>
+                </CardContent>
+              </Card>
+              <div className="w-full text-center text-xl font-medium">Name</div>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+</div>
+        </section>
+        <section className='w-screen gap-6  px-20 max-md:px-10 max-sm:px-4 flex flex-col items-center  bg-white  top-0 text-black py-24'>
+        <h6 className="text-5xl font-semibold text-[#9E0C39]">Get in touch</h6>
+        <p className="text-slate-500">We'd love to hear from you. Please fill out this form.</p>
+        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2 item-center">
+      <input type="text" placeholder="Name" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("name")} />
+      <input type="email" placeholder="Company Email" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("email")} />
+      <input type="number" placeholder="Phone Number" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("number")} />
+      <input type="text" placeholder="Title/Position" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("title/Position")} />
+      <input type="text" placeholder="Subject" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("subject")} />
+
+
+      <input type="submit" className="px-4 py-1 border border-[#9E0C39]  rounded-sm cursor-pointer bg-[#9E0C39] text-white duration-150 text-center my-4" />
+    </form>
+        </section>
     </>
   )
 }

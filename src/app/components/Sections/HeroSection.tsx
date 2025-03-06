@@ -5,7 +5,7 @@ function HeroSection() {
     <>
     <section className='w-screen min-h-screen flex max-sm:flex-col justify-between items-center gap-6 px-20 max-md:px-10 max-sm:px-4 py-6 overflow-hidden text-black pt-14'>
       <div className='w-2/3 max-sm:w-full max-sm:text-center max-sm:items-center flex flex-col gap-6 justify-center'>
-        <h1 className='text-[5vw] font-semibold text-[#9E0C39] leading-snug'>Changing Lives, One Rescue at a Time</h1>
+        <h1 className='text-[5vw] max-md:text-[9vw] font-semibold text-[#9E0C39] leading-snug max-md:text-center'>Changing Lives, One Rescue at a Time</h1>
         <p>Lorem ipsum dolor sit amet consectetur. Id tellus purus sapien amet donec. Ut vulputate hendrerit porttitor dictum sed montes varius nisl. Aenean a tristique tempor malesuada nulla. Euismod eget feugiat habitant dui.</p>
         <div>
         <button className='px-4 py-1 border border-[#9E0C39]  rounded-sm cursor-pointer bg-[#9E0C39] text-white duration-150'>Donate Now</button>

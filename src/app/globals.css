@@ -177,3 +177,6 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.eventbackground{
+  background: url(../../public/EventsbgImage.svg) no-repeat center/cover;
+}
