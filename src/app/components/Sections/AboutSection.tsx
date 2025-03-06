@@ -38,7 +38,7 @@ function AboutSection() {
           xmlns="http://www.w3.org/2000/svg"
           href="http://www.w3.org/1999/xlink"
         >
-          <g clip-path="url(#clip0_64_118)">
+          <g clipPath="url(#clip0_64_118)">
             <rect
               x="0.666626"
               y="0.666687"
@@ -72,7 +72,7 @@ function AboutSection() {
               fill="url(#pattern1_64_118)"
             />
           </g>
-          <g clip-path="url(#clip1_64_118)">
+          <g clipPath="url(#clip1_64_118)">
             <rect
               x="0.666626"
               y="299.333"

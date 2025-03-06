@@ -1,5 +1,6 @@
 import React from "react";
 import ProgramCard from "../ProgramCard";
+import Image from "next/image";
 
 function ProgramSection() {
   return (

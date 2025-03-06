@@ -10,17 +10,21 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { useForm, SubmitHandler } from "react-hook-form"
-type Inputs = {
-  example: string
-  exampleRequired: string
-}
+
 
 function page() {
+
+  interface Inputs {
+    name: string;
+    email: string;
+    number: number;
+    titlePosition: string; // renamed from "title/Position" because slashes can cause issues
+    subject: string;
+  }
   const {
     register,
     handleSubmit,
-    watch,
-    formState: { errors },
+    formState: {  },
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
   return (
@@ -5534,7 +5538,7 @@ function page() {
       <input type="text" placeholder="Name" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("name")} />
       <input type="email" placeholder="Company Email" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("email")} />
       <input type="number" placeholder="Phone Number" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("number")} />
-      <input type="text" placeholder="Title/Position" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("title/Position")} />
+      <input type="text" placeholder="Title/Position" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("titlePosition")} />
       <input type="text" placeholder="Subject" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("subject")} />
 
 
