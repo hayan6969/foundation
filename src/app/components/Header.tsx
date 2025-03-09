@@ -1,5 +1,4 @@
 'use client'
-import { NAV_LINKS } from '@/Content'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
@@ -28,11 +27,14 @@ function Header() {
     <Link href='/Roar' className='cursor-pointer hover:text-[#9E0C39]'>
     <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Roar</DropdownMenuItem>
     </Link>
-    <Link href='/Blogs' className='cursor-pointer hover:text-[#9E0C39]'>
-    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Blogs</DropdownMenuItem>
+    <Link href='/Veterans-Support-Program' className='cursor-pointer hover:text-[#9E0C39]'>
+    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Veterans Support Program</DropdownMenuItem>
     </Link>
-    <Link href='/Events' className='cursor-pointer hover:text-[#9E0C39]'>
-    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Events</DropdownMenuItem>
+    <Link href='/P.P.P' className='cursor-pointer hover:text-[#9E0C39]'>
+    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>P.P.P</DropdownMenuItem>
+    </Link>
+    <Link href='/HEAL' className='cursor-pointer hover:text-[#9E0C39]'>
+    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>HEAL</DropdownMenuItem>
     </Link>
   </DropdownMenuContent>
 </DropdownMenu>
@@ -71,11 +73,14 @@ function Header() {
     <Link href='/Roar' className='cursor-pointer hover:text-[#9E0C39]'>
     <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Roar</DropdownMenuItem>
     </Link>
-    <Link href='/Blogs' className='cursor-pointer hover:text-[#9E0C39]'>
-    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Blogs</DropdownMenuItem>
+    <Link href='/Veterans-Support-Program' className='cursor-pointer hover:text-[#9E0C39]'>
+    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Veterans Support Program</DropdownMenuItem>
     </Link>
-    <Link href='/Events' className='cursor-pointer hover:text-[#9E0C39]'>
-    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Events</DropdownMenuItem>
+    <Link href='/P.P.P' className='cursor-pointer hover:text-[#9E0C39]'>
+    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>P.P.P</DropdownMenuItem>
+    </Link>
+    <Link href='/HEAL' className='cursor-pointer hover:text-[#9E0C39]'>
+    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>HEAL</DropdownMenuItem>
     </Link>
   </DropdownMenuContent>
 </DropdownMenu>

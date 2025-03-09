@@ -17,7 +17,7 @@ function page() {
       <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
       <div className='h-60 w-44  bg-slate-300 rounded-sm mt-20 max-md:mt-0'></div>
     </div>
-    <div className='flex flex-col gap-6 items-center'>
+    <div className='flex flex-col gap-6 items-center md:hidden'>
       <div className='flex gap-6 items-center max-sm:flex-col'>
       <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
       <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>

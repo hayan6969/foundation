@@ -1,8 +1,33 @@
-import React from "react";
+import React from 'react'
+import Header from '../components/Header'
+import ServiceSection from '../components/Sections/ServiceSection'
 
-function ServiceSection() {
+function page() {
   return (
-    <section className="w-screen flex flex-col  items-center max-md:items-start gap-8 px-20 max-md:px-10 max-sm:px-4 overflow-hidden text-black py-20 text-center">
+    <>
+      <Header/>
+      <section className='w-screen flex flex-col  items-center gap-8 px-20 max-md:px-10 max-sm:px-4 overflow-hidden text-black py-20 text-center'>
+    <h1 className='text-[4vw] max-md:text-[9vw] font-semibold text-[#9E0C39] leading-snug'>Support for veterans in their transition back to civilian life.</h1>
+    <p className='mx-24 max-lg:mx-0'>Animals provide companionship and emotional support, easing veterans' transition to civilian life. Adoption programs connect veterans with loving pets, fostering healing, reducing stress, and building strong, lasting bonds for mutual well-being.</p>
+    <button className='px-4 py-1 border border-[#9E0C39]  rounded-sm cursor-pointer bg-[#9E0C39] text-white duration-150 hover:shadow-[2px 2px 5px #9E0C39]'>Join Now</button>
+    </section>
+    <div className='flex gap-4 justify-between items-center w-screen px-20 max-md:px-10 max-sm:px-4 overflow-hidden max-md:hidden '>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm mt-20 max-md:mt-0'></div> <br />
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm mt-20 max-md:mt-0'></div>
+    </div>
+    <div className='flex flex-col gap-6 items-center md:hidden'>
+      <div className='flex gap-6 items-center max-sm:flex-col'>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      </div>
+      <div className='flex gap-6 items-center max-sm:flex-col'>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      </div>
+    </div>
+    <section className="w-screen flex flex-col  items-center max-md:items-start gap-8 px-20 max-md:px-10 max-sm:px-4 py-10 overflow-hidden text-black  text-center">
       <h1 className="text-[4vw] font-semibold text-[#9E0C39] leading-snug w-full text-center">
         Services
       </h1>
@@ -52,8 +77,7 @@ function ServiceSection() {
               stroke-linejoin="round"
             />
           </svg>
-          <span className="text-lg font-semibold">Adoption</span>: Connecting
-          rescued animals with loving forever homes.
+          <span className="text-lg font-semibold">Equibe Therapy</span>: Details about equine therapy sessions and their benefits.
         </div>
         <div className="flex gap-2 items-center pl-20 max-lg:pl-10 max-md:pl-0">
           <svg
@@ -84,72 +108,7 @@ function ServiceSection() {
               fill="black"
             />
           </svg>
-          <span className="text-lg font-semibold">Fostering</span>: Temporary
-          homes for animals in transition.
-        </div>
-        <div className="flex gap-2 items-center pl-40 max-lg:pl-20 max-md:pl-0">
-          <svg
-            width="90"
-            height="90"
-            viewBox="0 0 108 108"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="max-md:hidden block"
-          >
-            <circle cx="54" cy="54" r="54" fill="#D5F0FF" />
-            <path
-              d="M54.5 75.5834C49.384 74.2952 45.1602 71.3596 41.8286 66.7765C38.4969 62.1935 36.8318 57.1055 36.8333 51.5125V38.0417L54.5 31.4167L72.1666 38.0417V51.5125C72.1666 57.107 70.5016 62.1957 67.1714 66.7787C63.8412 71.3618 59.6174 74.2966 54.5 75.5834ZM54.5 70.9459C58.3278 69.7313 61.493 67.3021 63.9958 63.6584C66.4986 60.0146 67.75 55.966 67.75 51.5125V41.0781L54.5 36.1094L41.25 41.0781V51.5125C41.25 55.966 42.5014 60.0146 45.0041 63.6584C47.5069 67.3021 50.6722 69.7313 54.5 70.9459Z"
-              fill="black"
-            />
-          </svg>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 108 108"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="block md:hidden"
-          >
-            <circle cx="54" cy="54" r="54" fill="#D5F0FF" />
-            <path
-              d="M54.5 75.5834C49.384 74.2952 45.1602 71.3596 41.8286 66.7765C38.4969 62.1935 36.8318 57.1055 36.8333 51.5125V38.0417L54.5 31.4167L72.1666 38.0417V51.5125C72.1666 57.107 70.5016 62.1957 67.1714 66.7787C63.8412 71.3618 59.6174 74.2966 54.5 75.5834ZM54.5 70.9459C58.3278 69.7313 61.493 67.3021 63.9958 63.6584C66.4986 60.0146 67.75 55.966 67.75 51.5125V41.0781L54.5 36.1094L41.25 41.0781V51.5125C41.25 55.966 42.5014 60.0146 45.0041 63.6584C47.5069 67.3021 50.6722 69.7313 54.5 70.9459Z"
-              fill="black"
-            />
-          </svg>
-          <span className="text-lg font-semibold">Rescue Operations</span>:
-          Emergency rescue for animals in distress.
-        </div>
-        <div className="flex gap-2 items-center pl-60 max-lg:pl-32 max-md:pl-0">
-          <svg
-            width="90"
-            height="90"
-            viewBox="0 0 108 108"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="max-md:hidden block"
-          >
-            <circle cx="54" cy="54" r="54" fill="#E3C0FF" />
-            <path
-              d="M63.25 31.5H46.75V45.75H32.5V62.25H46.75V76.5H63.25V62.25H77.5V45.75H63.25V31.5ZM74.5 48.75V59.25H60.25V73.5H49.75V59.25H35.5V48.75H49.75V34.5H60.25V48.75H74.5Z"
-              fill="black"
-            />
-          </svg>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 108 108"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="block md:hidden"
-          >
-            <circle cx="54" cy="54" r="54" fill="#E3C0FF" />
-            <path
-              d="M63.25 31.5H46.75V45.75H32.5V62.25H46.75V76.5H63.25V62.25H77.5V45.75H63.25V31.5ZM74.5 48.75V59.25H60.25V73.5H49.75V59.25H35.5V48.75H49.75V34.5H60.25V48.75H74.5Z"
-              fill="black"
-            />
-          </svg>
-          <span className="text-lg font-semibold">Medical Care</span>:
-          Vaccinations, spaying/neutering, and rehanilitaion.
+          <span className="text-lg font-semibold">Job Traning</span>: Information on career support and job readiness programs.
         </div>
       </div>
       <div className="flex flex-col gap-4 justify-between items-center text-black">
@@ -179,7 +138,8 @@ function ServiceSection() {
         </div>
       </div>
     </section>
-  );
+    </>
+  )
 }
 
-export default ServiceSection;
+export default page
