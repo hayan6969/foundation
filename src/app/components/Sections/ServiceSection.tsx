@@ -3,11 +3,11 @@ import React from "react";
 function ServiceSection() {
   return (
     <section className="w-screen flex flex-col  items-center max-md:items-start gap-8 px-20 max-md:px-10 max-sm:px-4 overflow-hidden text-black py-20 text-center">
-      <h1 className="text-[4vw] font-semibold text-[#9E0C39] leading-snug w-full text-center">
+      <h1 className="text-[4vw] font-semibold max-md:text-[9vw] text-[#9E0C39] leading-snug w-full text-center">
         Services
       </h1>
-      <div className="flex flex-col gap-6">
-        <div className="flex gap-2 items-center">
+      <div className="flex max-sm:items-center flex-col gap-6 w-full">
+        <div className="flex gap-2 max-sm:flex-col max-sm:items-center max-sm:text-center items-center max-md:items-start max-md:text-start">
           <svg
             width="90"
             height="90"
@@ -52,10 +52,10 @@ function ServiceSection() {
               stroke-linejoin="round"
             />
           </svg>
-          <span className="text-lg font-semibold">Adoption</span>: Connecting
+          <span className="text-lg font-semibold">Adoption :</span> Connecting
           rescued animals with loving forever homes.
         </div>
-        <div className="flex gap-2 items-center pl-20 max-lg:pl-10 max-md:pl-0">
+        <div className="flex gap-2 items-center max-sm:flex-col max-sm:items-center max-sm:text-center max-md:items-start pl-20 max-lg:pl-10 max-md:pl-0 max-md:text-start">
           <svg
             width="90"
             height="90"
@@ -84,10 +84,10 @@ function ServiceSection() {
               fill="black"
             />
           </svg>
-          <span className="text-lg font-semibold">Fostering</span>: Temporary
+          <span className="text-lg font-semibold">Fostering :</span> Temporary
           homes for animals in transition.
         </div>
-        <div className="flex gap-2 items-center pl-40 max-lg:pl-20 max-md:pl-0">
+        <div className="flex gap-2 items-center max-sm:flex-col max-sm:items-center max-sm:text-center max-md:items-start pl-40 max-lg:pl-20 max-md:pl-0 max-md:text-start">
           <svg
             width="90"
             height="90"
@@ -116,10 +116,10 @@ function ServiceSection() {
               fill="black"
             />
           </svg>
-          <span className="text-lg font-semibold">Rescue Operations</span>:
+          <span className="text-lg font-semibold">Rescue Operations :</span>
           Emergency rescue for animals in distress.
         </div>
-        <div className="flex gap-2 items-center pl-60 max-lg:pl-32 max-md:pl-0">
+        <div className="flex gap-2 items-center max-sm:flex-col max-sm:items-center max-sm:text-center max-md:items-start pl-60 max-lg:pl-32 max-md:pl-0 max-md:text-start">
           <svg
             width="90"
             height="90"
@@ -148,7 +148,7 @@ function ServiceSection() {
               fill="black"
             />
           </svg>
-          <span className="text-lg font-semibold">Medical Care</span>:
+          <span className="text-lg font-semibold">Medical Care :</span>
           Vaccinations, spaying/neutering, and rehanilitaion.
         </div>
       </div>
@@ -163,7 +163,7 @@ function ServiceSection() {
               <div className="w-10 h-10 rounded-full bg-slate-300"></div>
               <div className="">
                 <h3 className="text-lg font-semibold">Helen Cory</h3>
-                <p className="text-sm text-slate-500">Jerry's Adopter</p>
+                <p className="text-sm text-slate-500">Jerry&apos;s Adopter</p>
               </div>
             </div>
             <p className="text-start">

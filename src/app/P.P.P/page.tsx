@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../components/Header'
-import ServiceSection from '../components/Sections/ServiceSection'
 import Image from 'next/image'
 
 function page() {
@@ -9,7 +8,7 @@ function page() {
     <Header/>
     <section className='w-screen flex flex-col items-center gap-8 px-20 max-md:px-10 max-sm:px-4 overflow-hidden text-black py-20 text-center'>
     <h1 className='text-[4vw] max-md:text-[9vw] font-semibold text-[#9E0C39] leading-snug'>Welcome to Purple Paw Project {'(P.P.P)'}</h1>
-    <p className='mx-24 max-lg:mx-0 text-lg'>At the Purple Paw Project, we are committed to ensuring that individuals escaping domestic violence do not have to sacrifice the safety of their cherished pets. Disturbingly, 40% of those facing domestic abuse feel unable to leave their situation due to concerns for their animals. Furthermore, 25% of survivors return to abusive environments because they worry about their pets' welfare. The Red Orchard Foundation is taking steps to make a difference.
+    <p className='mx-24 max-lg:mx-0 text-lg'>At the Purple Paw Project, we are committed to ensuring that individuals escaping domestic violence do not have to sacrifice the safety of their cherished pets. Disturbingly, 40% of those facing domestic abuse feel unable to leave their situation due to concerns for their animals. Furthermore, 25% of survivors return to abusive environments because they worry about their pets welfare. The Red Orchard Foundation is taking steps to make a difference.
     </p>
     <button className='px-4 py-1 border border-[#9E0C39]  rounded-sm cursor-pointer bg-[#9E0C39] text-white duration-150'>Join Now</button>
     </section>
@@ -17,7 +16,7 @@ function page() {
   <div className='flex max-md:flex-col gap-4 item-center w-full'>
   <div className='flex flex-col text-black w-full gap-4'>
   <h3 className='text-3xl font-semibold text-[#9E0C39]'>Our Vision</h3>
-    <p className='text-lg max-lg:text-base'>At the Purple Paw Project, we are committed to ensuring that individuals escaping domestic violence do not have to sacrifice the safety of their cherished pets. Disturbingly, 40% of those facing domestic abuse feel unable to leave their situation due to concerns for their animals. Furthermore, 25% of survivors return to abusive environments because they worry about their pets' welfare. The Red Orchard Foundation is taking steps to make a difference.
+    <p className='text-lg max-lg:text-base'>At the Purple Paw Project, we are committed to ensuring that individuals escaping domestic violence do not have to sacrifice the safety of their cherished pets. Disturbingly, 40% of those facing domestic abuse feel unable to leave their situation due to concerns for their animals. Furthermore, 25% of survivors return to abusive environments because they worry about their pets welfare. The Red Orchard Foundation is taking steps to make a difference.
     </p>
   </div>
     <div className='w-full rounded-md overflow-hidden'>
@@ -51,7 +50,7 @@ function page() {
     </div>
   <div className='flex flex-col gap-4 text-black w-full'>
   <h3 className='text-3xl font-semibold text-[#9E0C39] leading-snug'>Ending the Cycle of Control</h3>
-    <p className='text-lg max-lg:text-base'>Abusive partners often manipulate the bond between victims and their pets as a tactic for control and isolation. The Purple Paw Project aims to dismantle this cycle by providing a safe haven for pets, enabling survivors to escape without the additional burden of worrying about their animal's safety. With only 15% of domestic violence shelters in the United States accommodating pets, our initiative is at the forefront of driving necessary change.
+    <p className='text-lg max-lg:text-base'>Abusive partners often manipulate the bond between victims and their pets as a tactic for control and isolation. The Purple Paw Project aims to dismantle this cycle by providing a safe haven for pets, enabling survivors to escape without the additional burden of worrying about their animal&apos;s safety. With only 15% of domestic violence shelters in the United States accommodating pets, our initiative is at the forefront of driving necessary change.
     </p>
   </div>
   </div>

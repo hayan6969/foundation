@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../components/Header'
-import ServiceSection from '../components/Sections/ServiceSection'
 
 function page() {
   return (
@@ -8,7 +7,7 @@ function page() {
       <Header/>
       <section className='w-screen flex flex-col  items-center gap-8 px-20 max-md:px-10 max-sm:px-4 overflow-hidden text-black py-20 text-center'>
     <h1 className='text-[4vw] max-md:text-[9vw] font-semibold text-[#9E0C39] leading-snug'>Support for veterans in their transition back to civilian life.</h1>
-    <p className='mx-24 max-lg:mx-0'>Animals provide companionship and emotional support, easing veterans' transition to civilian life. Adoption programs connect veterans with loving pets, fostering healing, reducing stress, and building strong, lasting bonds for mutual well-being.</p>
+    <p className='mx-24 max-lg:mx-0'>Animals provide companionship and emotional support, easing veterans transition to civilian life. Adoption programs connect veterans with loving pets, fostering healing, reducing stress, and building strong, lasting bonds for mutual well-being.</p>
     <button className='px-4 py-1 border border-[#9E0C39]  rounded-sm cursor-pointer bg-[#9E0C39] text-white duration-150 hover:shadow-[2px 2px 5px #9E0C39]'>Join Now</button>
     </section>
     <div className='flex gap-4 justify-between items-center w-screen px-20 max-md:px-10 max-sm:px-4 overflow-hidden max-md:hidden '>
@@ -28,11 +27,11 @@ function page() {
       </div>
     </div>
     <section className="w-screen flex flex-col  items-center max-md:items-start gap-8 px-20 max-md:px-10 max-sm:px-4 py-10 overflow-hidden text-black  text-center">
-      <h1 className="text-[4vw] font-semibold text-[#9E0C39] leading-snug w-full text-center">
+      <h1 className="text-[4vw] max-md:text-[9vw] font-semibold text-[#9E0C39] leading-snug w-full text-center">
         Services
       </h1>
-      <div className="flex flex-col gap-6">
-        <div className="flex gap-2 items-center">
+      <div className="flex flex-col max-sm:items-center w-full gap-6">
+        <div className="flex max-sm:flex-col max-sm:items-center gap-2 max-md:items-start max-md:text-start items-center">
           <svg
             width="90"
             height="90"
@@ -61,7 +60,7 @@ function page() {
             viewBox="0 0 108 108"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="block md:hidden"
+            className="block md:hidden max-sm:-translate-y-2"
           >
             <circle cx="54" cy="54" r="54" fill="#FFBFBF" />
             <path
@@ -77,9 +76,9 @@ function page() {
               stroke-linejoin="round"
             />
           </svg>
-          <span className="text-lg font-semibold">Equibe Therapy</span>: Details about equine therapy sessions and their benefits.
+          <span className="text-lg font-semibold">Equibe Therapy :</span> Details about equine therapy sessions and their benefits.
         </div>
-        <div className="flex gap-2 items-center pl-20 max-lg:pl-10 max-md:pl-0">
+        <div className="flex max-sm:flex-col max-sm:items-center max-sm:text-center gap-2 items-center max-md:items-start max-md:text-start pl-20 max-lg:pl-10 max-md:pl-0">
           <svg
             width="90"
             height="90"
@@ -100,7 +99,7 @@ function page() {
             viewBox="0 0 108 108"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="block md:hidden"
+            className="block md:hidden max-sm:-translate-y-2"
           >
             <circle cx="54" cy="54" r="54" fill="#FFCFDE" />
             <path
@@ -108,7 +107,7 @@ function page() {
               fill="black"
             />
           </svg>
-          <span className="text-lg font-semibold">Job Traning</span>: Information on career support and job readiness programs.
+          <span className="text-lg font-semibold">Job Traning :</span> Information on career support and job readiness programs.
         </div>
       </div>
       <div className="flex flex-col gap-4 justify-between items-center text-black">
@@ -122,7 +121,7 @@ function page() {
               <div className="w-10 h-10 rounded-full bg-slate-300"></div>
               <div className="">
                 <h3 className="text-lg font-semibold">Helen Cory</h3>
-                <p className="text-sm text-slate-500">Jerry's Adopter</p>
+                <p className="text-sm text-slate-500">Jerry&apos;s Adopter</p>
               </div>
             </div>
             <p className="text-start">
