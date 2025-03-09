@@ -10,9 +10,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { useForm, SubmitHandler } from "react-hook-form"
+import Image from 'next/image'
 
 
-function page() {
+function Page() {
 
   interface Inputs {
     name: string;
@@ -31,16 +32,16 @@ function page() {
     <>
     <Header/>
       <section className='w-screen  px-20 max-md:px-10 max-sm:px-4 flex flex-col items-center py-4 bg-white  top-0 text-black pt-24' >
-       <h1 className='text-gray-800 text-[5vw] max-md:text-[7vw] max-sm:text-[10vw] font-semibold text-center leading-snug border-b-4 p-2 border-gray-300'>We're here to <br /><span className='text-[#9E0C39]' >Help You</span></h1>
+       <h1 className='text-gray-800 text-[5vw] max-md:text-[7vw] max-sm:text-[10vw] font-semibold text-center leading-snug border-b-4 p-2 border-gray-300'>We&apos;re here to <br /><span className='text-[#9E0C39]' >Help You</span></h1>
       </section>
        <div className='w-screen min-h-screen relative px-20 max-md:px-10 max-sm:px-4 py-4 text-black  pt-24'>
         <div className='w-full px-10 py-6 bg-[#9E0C39] text-white text-2xl rounded-lg max-md:text-xl max-sm:text-base max-sm:px-5 max-sm:py-3'>The Red Orchard Foundation was founded with a simple yet profound mission: to create a compassionate world where animals and people in need find hope, healing, and a second chance. What began as a small rescue initiative has grown into a dedicated nonprofit organization supporting animal welfare, veterans, survivors of domestic violence, and grieving families.</div>
         <div className='w-full absolute left-0 -translate-y-14 max-sm:-translate-y-10'>
-        <img src="./Rectangle 62 (3).png" alt="" className='w-full' />
+        <Image src='/aboutImage.png' width='1000' height="500" alt="" className='w-full' />
         </div>
        </div>
         <div className='flex flex-col gap-6 w-screen  px-20 max-md:px-10 max-sm:px-4 items-center py-4 pt-40'>
-        <h1 className='text-gray-800 text-[5vw] font-semibold text-center leading-snug border-b-4 p-2 border-gray-300'>We're here to <br /><span className='text-[#9E0C39]' >no matter where you are</span></h1>
+        <h1 className='text-gray-800 text-[5vw] font-semibold text-center leading-snug border-b-4 p-2 border-gray-300'>We&apos;re here to <br /><span className='text-[#9E0C39]' >no matter where you are</span></h1>
         <svg width="auto" height="auto" viewBox="0 0 1280 488" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M360.438 19.5764C360.438 20.6018 359.605 21.434 358.579 21.434C357.552 21.434 356.719 20.6018 356.719 19.5764C356.719 18.551 357.552 17.7188 358.579 17.7188C359.605 17.7188 360.438 18.551 360.438 19.5764Z" fill="#D0D5DD"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M360.438 25.1491C360.438 26.1746 359.605 27.0068 358.579 27.0068C357.552 27.0068 356.719 26.1746 356.719 25.1491C356.719 24.1237 357.552 23.2915 358.579 23.2915C359.605 23.2915 360.438 24.1237 360.438 25.1491Z" fill="#D0D5DD"/>
@@ -5533,7 +5534,7 @@ function page() {
         </section>
         <section className='w-screen gap-6  px-20 max-md:px-10 max-sm:px-4 flex flex-col items-center  bg-white  top-0 text-black py-24'>
         <h6 className="text-5xl font-semibold text-[#9E0C39]">Get in touch</h6>
-        <p className="text-slate-500">We'd love to hear from you. Please fill out this form.</p>
+        <p className="text-slate-500">We&apos;d love to hear from you. Please fill out this form.</p>
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2 item-center">
       <input type="text" placeholder="Name" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("name")} />
       <input type="email" placeholder="Company Email" className="px-0 py-2 text-sm border-b border-slate-400 w-80 max-sm:w-64 outline-none focus:border-[#9E0C39]" {...register("email")} />
@@ -5549,4 +5550,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

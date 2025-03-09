@@ -1,13 +1,41 @@
-import React from "react";
+import React from 'react'
+import Header from '../components/Header'
 
-function ServiceSection() {
+function page() {
   return (
-    <section className="w-screen flex flex-col  items-center max-md:items-start gap-8 px-20 max-md:px-10 max-sm:px-4 overflow-hidden text-black py-20 text-center">
-      <h1 className="text-[4vw] font-semibold max-md:text-[9vw] text-[#9E0C39] leading-snug w-full text-center">
+    <>
+    <Header/>
+    <section className='w-screen flex flex-col  items-center gap-8 px-20 max-md:px-10 max-sm:px-4 overflow-hidden text-black py-20 text-center'>
+    <h1 className='text-[4vw] max-md:text-[9vw] font-semibold text-[#9E0C39] leading-snug'>Safe Haven for Pets of Domestic Violence Survivors (P.A.W.S - Protecting Animals With Safety)
+    </h1>
+    <p className='mx-24 max-lg:mx-0'>At P.A.W.S. (Protecting Animals With Safety), we believe that no one should have to choose between their safety and their pet. Many survivors of domestic violence delay or avoid leaving abusive situations because they fear for their pets safety. Our mission is to provide a safe haven for pets, ensuring that survivors can seek refuge without leaving their beloved animals behind.
+    </p>
+    <button className='px-4 py-1 border border-[#9E0C39]  rounded-sm cursor-pointer bg-[#9E0C39] text-white duration-150'>Join Now</button>
+    </section>
+    <div className='flex gap-4 justify-between items-center w-screen px-20 max-md:px-10 max-sm:px-4s overflow-hidden max-md:hidden'>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm mt-20 max-md:mt-0'></div> <br />
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm mt-20 max-md:mt-0'></div>
+    </div>
+    <div className='flex flex-col gap-6 items-center md:hidden'>
+      <div className='flex gap-6 items-center max-sm:flex-col'>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      </div>
+      <div className='flex gap-6 items-center max-sm:flex-col'>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
+      </div>
+    </div>
+    <section className="w-screen flex flex-col  items-center max-md:items-start gap-8 px-20 max-md:px-10 max-sm:px-4 overflow-hidden text-black py-20">
+      <h1 className="text-[4vw] max-md:text-[9vw] font-semibold text-[#9E0C39] leading-snug w-full text-center">
         Services
       </h1>
-      <div className="flex max-sm:items-center flex-col gap-6 w-full">
-        <div className="flex gap-2 max-sm:flex-col max-sm:items-center max-sm:text-center items-center max-md:items-start max-md:text-start">
+    <p className='mx-24 max-lg:mx-0'>We provide temporary care, resources, and support for pets while their owners transition to safety. Our services include
+    </p>
+      <div className="flex flex-col gap-6 max-sm:w-full max-sm:items-center">
+        <div className="flex gap-2 max-sm:flex-col max-sm:items-center max-sm:text-center items-center max-md:items-start">
           <svg
             width="90"
             height="90"
@@ -52,10 +80,9 @@ function ServiceSection() {
               stroke-linejoin="round"
             />
           </svg>
-          <span className="text-lg font-semibold">Adoption :</span> Connecting
-          rescued animals with loving forever homes.
+          <span className="text-lg font-semibold">Emergency Pet Shelter :</span> Safe, confidential housing for pets while survivors find secure accommodations.
         </div>
-        <div className="flex gap-2 items-center max-sm:flex-col max-sm:items-center max-sm:text-center max-md:items-start pl-20 max-lg:pl-10 max-md:pl-0 max-md:text-start">
+        <div className="flex gap-2 max-sm:flex-col max-sm:items-center max-sm:text-center items-center pl-20 max-lg:pl-10 max-md:pl-0 max-md:items-start">
           <svg
             width="90"
             height="90"
@@ -84,10 +111,10 @@ function ServiceSection() {
               fill="black"
             />
           </svg>
-          <span className="text-lg font-semibold">Fostering :</span> Temporary
-          homes for animals in transition.
+          <span className="text-lg font-semibold">Veterinary & Wellness Care :</span> Health checkups, vaccinations, and medical care for rescued pets.
+
         </div>
-        <div className="flex gap-2 items-center max-sm:flex-col max-sm:items-center max-sm:text-center max-md:items-start pl-40 max-lg:pl-20 max-md:pl-0 max-md:text-start">
+        <div className="flex gap-2 max-sm:flex-col max-sm:items-center max-sm:text-center items-center pl-40 max-lg:pl-20 max-md:pl-0 max-md:items-start">
           <svg
             width="90"
             height="90"
@@ -116,10 +143,12 @@ function ServiceSection() {
               fill="black"
             />
           </svg>
-          <span className="text-lg font-semibold">Rescue Operations :</span>
-          Emergency rescue for animals in distress.
+          <span className="text-lg font-semibold text-start">Food & Supplies Assistance :</span>
+          Providing essentials like food, bedding, and toys.
+✔ Reunification Support: Helping survivors and their pets reunite when they are in a stable environment.
+
         </div>
-        <div className="flex gap-2 items-center max-sm:flex-col max-sm:items-center max-sm:text-center max-md:items-start pl-60 max-lg:pl-32 max-md:pl-0 max-md:text-start">
+        <div className="flex gap-2 max-sm:flex-col max-sm:items-center max-sm:text-center items-center pl-60 max-lg:pl-32 max-md:pl-0 max-md:items-start">
           <svg
             width="90"
             height="90"
@@ -148,38 +177,22 @@ function ServiceSection() {
               fill="black"
             />
           </svg>
-          <span className="text-lg font-semibold">Medical Care :</span>
-          Vaccinations, spaying/neutering, and rehanilitaion.
+          <span className="text-lg font-semibold"> Advocacy & Awareness :</span>
+          Educating communities on the link between domestic violence and animal welfare.
         </div>
       </div>
       <div className="flex flex-col gap-4 justify-between items-center text-black">
-        <h1 className="text-[4vw] max-md:text-[9vw] font-semibold text-[#9E0C39] leading-snug py-20 max-md:py-10">
+        <h1 className="text-[4vw] max-md:text-[9vw] font-semibold text-[#9E0C39] leading-snug max-md:py-10">
           Success Stories
         </h1>
-        <div className="flex gap-4 max-md:flex-col">
-          <div className="w-[40vw] h-60 bg-slate-300 max-md:w-full"></div>
-          <div className="w-full flex flex-col gap-6">
-            <div className="flex gap-2 items-center">
-              <div className="w-10 h-10 rounded-full bg-slate-300"></div>
-              <div className="">
-                <h3 className="text-lg font-semibold">Helen Cory</h3>
-                <p className="text-sm text-slate-500">Jerry&apos;s Adopter</p>
-              </div>
-            </div>
-            <p className="text-start">
-              Lorem ipsum dolor sit amet consectetur. Id tellus purus sapien
-              amet donec. Ut vulputate hendrerit porttitor dictum sed montes
-              varius nisl. Aenean a tristique tempor malesuada nulla. Euismod
-              eget feugiat habitant dui. Lorem ipsum dolor sit amet consectetur.
-              Id tellus purus sapien amet donec. Ut vulputate hendrerit
-              porttitor dictum sed montes varius nisl. Aenean a tristique tempor
-              malesuada nulla. Euismod eget feugiat habitant dui.
-            </p>
-          </div>
+        <div className="flex gap-4 max-md:flex-col text-lg">
+        <p className='mx-24 max-lg:mx-0'>When I had nowhere else to go, P.A.W.S. gave my dog a safe place to stay. Knowing he was loved and cared for gave me the courage to leave and rebuild my life.&quot; – Survivor & Pet Owner <br />Volunteering as a foster has been one of the most rewarding experiences. I know that by helping a pet, I&apos;m also helping a survivor start a new chapter.&quot; – P.A.W.S. Foster Parent
+        </p>
         </div>
       </div>
     </section>
-  );
+    </>
+  )
 }
 
-export default ServiceSection;
+export default page

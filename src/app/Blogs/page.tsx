@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Header from '../components/Header'
 
-function page() {
+function Page() {
   const BLOGS=[
     {title:"Healing Through Horses: The Benefits of Equine Therapy for Veterans",date:"4 Mins Ago. 24 August 2025"},
     {title:"Mental Health & PTSD: How Rescue Animals Help Veterans Cope",date:"4 Mins Ago. 24 August 2025"},
@@ -48,4 +48,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

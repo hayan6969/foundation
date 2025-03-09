@@ -15,7 +15,7 @@ type Inputs = {
     phoneNumber: number
     message: string
   }
-function page() {
+function Page() {
     const {
         register,
         handleSubmit,
@@ -67,6 +67,7 @@ function page() {
            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-8 max-md:gap-4 item-center'>
             <div className='flex gap-4 items-center max-lg:flex-col'>
            <input type="text" placeholder="First Name" className="px-0 py-2 text-sm border-b border-slate-400 w-60 max-md:w-full outline-none focus:border-[#9E0C39]" {...register("firstName")} />
+           <div className='hidden'>{errors.exampleRequired && <span>This field is required</span>}</div>
            <input type="text" placeholder="Last Name" className="px-0 py-2 text-sm border-b border-slate-400 w-60 outline-none max-md:w-full focus:border-[#9E0C39]" {...register("lastName")} />
             </div>
             <div className='flex gap-4 items-center max-lg:flex-col'>
@@ -104,4 +105,4 @@ function page() {
 </section>
 </>
     )}
-export default page
+export default Page
