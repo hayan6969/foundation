@@ -43,11 +43,12 @@ function ProgramSection() {
                 className="h-full w-full"
               />
             </div>
-            <h5 className="text-lg font-medium w-full text-center">
-            EACH - Ref Orchard Empowering All Combact Heroes
+            <h5 className="text-xl font-medium w-full text-center">
+            {/* EACH - Ref Orchard Empowering All Combact Heroes */}
+            The Warrior Project
             </h5>
             <div>
-              <Link href='/Veterans-Support-Program' className="px-4 py-1 border border-[#9E0C39] text-[#9E0C39] hover:bg-[#9E0C39] hover:text-white duration-200 cursor-pointer">
+              <Link href='/Warrior-Project' className="px-4 py-1 border border-[#9E0C39] text-[#9E0C39] hover:bg-[#9E0C39] hover:text-white duration-200 cursor-pointer">
                 Learn More
               </Link>
             </div>

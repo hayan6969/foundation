@@ -17,8 +17,9 @@ function Header() {
   return (
     <>
     <nav className='w-screen px-20 max-md:px-10 max-sm:px-4 flex justify-between items-center py-4 bg-white fixed top-0 z-50 shadow-md text-black max-md:hidden'>
-      <div className='flex gap-8'>
+      <div className='flex gap-6 text-sm'>
         <Link href='/' className='hover:text-[#9E0C39]'>Home</Link>
+        <Link href='/' className='hover:text-[#9E0C39]'>Who we are</Link>
         <DropdownMenu>
   <DropdownMenuTrigger className='cursor-pointer hover:text-[#9E0C39] flex gap-1 items-center'>Programs<IoIosArrowDown className='mt-1.5 font-light' /></DropdownMenuTrigger>
   <DropdownMenuContent>
@@ -39,7 +40,9 @@ function Header() {
   </DropdownMenuContent>
 </DropdownMenu>
 
-        <Link href='/About-us' className='hover:text-[#9E0C39]'>About Us</Link>
+        <Link href='/Events' className='hover:text-[#9E0C39]'>Events</Link>
+        <Link href='/' className='hover:text-[#9E0C39]'>Recources</Link>
+        <Link href='/' className='hover:text-[#9E0C39]'>Get Involve</Link>
         <Link href='/Contact-us' className='hover:text-[#9E0C39]'>Contact Us</Link>
       </div>
       <div className='flex gap-6'>
