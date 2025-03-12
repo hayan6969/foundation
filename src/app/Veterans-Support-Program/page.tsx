@@ -12,7 +12,7 @@ function page() {
     </section>
     <div className='flex gap-4 justify-between items-center w-screen px-20 max-md:px-10 max-sm:px-4 overflow-hidden max-md:hidden '>
       <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
-      <div className='h-60 w-44  bg-slate-300 rounded-sm mt-20 max-md:mt-0'></div> <br />
+      <div className='h-60 w-44  bg-slate-300 rounded-sm mt-20 max-md:mt-0'></div>
       <div className='h-60 w-44  bg-slate-300 rounded-sm'></div>
       <div className='h-60 w-44  bg-slate-300 rounded-sm mt-20 max-md:mt-0'></div>
     </div>
