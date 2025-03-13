@@ -4,8 +4,8 @@ import Header from '../components/Header'
 import { FaPhoneVolume,FaEnvelope,FaLocationDot,FaTwitter,FaDiscord } from "react-icons/fa6";
 import { CiInstagram } from "react-icons/ci";
 import { useForm, SubmitHandler } from "react-hook-form"
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+// import { Label } from "@/components/ui/label"
+// import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 type Inputs = {
     example: string
     exampleRequired: string
