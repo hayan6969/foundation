@@ -28,8 +28,8 @@ function Header() {
     <Link href='/Roar' className='cursor-pointer hover:text-[#9E0C39]'>
     <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Roar</DropdownMenuItem>
     </Link>
-    <Link href='/Veterans-Support-Program' className='cursor-pointer hover:text-[#9E0C39]'>
-    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Veterans Support Program</DropdownMenuItem>
+    <Link href='/Warrior-Project' className='cursor-pointer hover:text-[#9E0C39]'>
+    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Warrior Project</DropdownMenuItem>
     </Link>
     <Link href='/P.P.P' className='cursor-pointer hover:text-[#9E0C39]'>
     <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>P.P.P</DropdownMenuItem>
@@ -64,10 +64,11 @@ function Header() {
     <div
         className={`${
           openSidebar ? "translate-x-0" : "-translate-x-full"
-          } md:hidden z-[20] fixed top-0 left-0 h-screen overflow-y-scroll w-3/4 bg-[#9E0C39] text-white px-6 py-4 transition-transform duration-300 ease-in-out pt-12`}
+          } md:hidden z-[20] fixed top-0 left-0 h-screen overflow-y-scroll w-3/4 bg-[#9E0C39] text-white px-6 py-4 transition-transform duration-300 ease-in-out pt-8`}
           >
             <div className='flex flex-col gap-8'>
-        <Link href='/' className='hover:text-[#9E0C39]'>Home</Link>
+            <Link href='/' className='hover:text-[#9E0C39]'>Home</Link>
+        <Link href='/' className='hover:text-[#9E0C39]'>Who we are</Link>
         <DropdownMenu>
   <DropdownMenuTrigger className='cursor-pointer hover:text-[#9E0C39] flex gap-1 items-center'>Programs<IoIosArrowDown className='mt-1.5 font-light' /></DropdownMenuTrigger>
   <DropdownMenuContent>
@@ -76,8 +77,8 @@ function Header() {
     <Link href='/Roar' className='cursor-pointer hover:text-[#9E0C39]'>
     <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Roar</DropdownMenuItem>
     </Link>
-    <Link href='/Veterans-Support-Program' className='cursor-pointer hover:text-[#9E0C39]'>
-    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Veterans Support Program</DropdownMenuItem>
+    <Link href='/Warrior-Project' className='cursor-pointer hover:text-[#9E0C39]'>
+    <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>Warrior Project</DropdownMenuItem>
     </Link>
     <Link href='/P.P.P' className='cursor-pointer hover:text-[#9E0C39]'>
     <DropdownMenuItem className='cursor-pointer hover:text-[#9E0C39]'>P.P.P</DropdownMenuItem>
@@ -88,7 +89,9 @@ function Header() {
   </DropdownMenuContent>
 </DropdownMenu>
 
-        <Link href='/About-us' className='hover:text-[#9E0C39]'>About Us</Link>
+        <Link href='/Events' className='hover:text-[#9E0C39]'>Events</Link>
+        <Link href='/' className='hover:text-[#9E0C39]'>Recources</Link>
+        <Link href='/' className='hover:text-[#9E0C39]'>Get Involve</Link>
         <Link href='/Contact-us' className='hover:text-[#9E0C39]'>Contact Us</Link>
       </div>
       <div className='flex flex-col gap-6 mt-8'>
