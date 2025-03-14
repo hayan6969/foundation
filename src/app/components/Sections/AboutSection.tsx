@@ -2,12 +2,12 @@ import React from "react";
 
 function AboutSection() {
   return (
-    <section className="w-screen min-h-screen flex items-center justify-between gap-8 py-10 px-20 max-md:px-10 max-sm:px-4 text-black max-md:flex-col">
+    <section className="w-screen flex items-center justify-between gap-8 py-10 px-20 max-md:px-10 max-sm:px-4 text-black max-md:flex-col">
       <div className="w-full flex flex-col gap-6 justify-center">
         <h5 className="text-lg font-semibold text-black">About Us</h5>
         <div className="flex flex-col gap-3">
           <h6 className="text-5xl font-semibold text-[#9E0C39]">Our Shelter</h6>
-          <p className="text-sm">
+          <p className="">
             Lorem ipsum dolor sit amet consectetur. Id tellus purus sapien amet
             donec. Ut vulputate hendrerit porttitor dictum sed montes varius
             nisl. Aenean a tristique tempor malesuada nulla. Euismod eget
@@ -16,7 +16,7 @@ function AboutSection() {
         </div>
         <div className="flex flex-col gap-3">
           <h6 className="text-5xl font-semibold text-[#9E0C39]">Our Mission</h6>
-          <p className="text-sm">
+          <p className="">
             Lorem ipsum dolor sit amet consectetur. Id tellus purus sapien amet
             donec. Ut vulputate hendrerit porttitor dictum sed montes varius
             nisl. Aenean a tristique tempor malesuada nulla. Euismod eget
@@ -24,7 +24,7 @@ function AboutSection() {
           </p>
         </div>
         <div>
-          <button className="px-4 py-1 border border-[#9E0C39] text-[#9E0C39] hover:bg-[#9E0C39] hover:text-white duration-200 cursor-pointer">
+          <button className="px-4 py-1 border rounded-sm border-[#9E0C39] text-[#9E0C39] hover:bg-[#9E0C39] hover:text-white duration-200 cursor-pointer">
             Learn More
           </button>
         </div>
