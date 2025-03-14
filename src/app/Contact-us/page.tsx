@@ -4,8 +4,8 @@ import Header from '../components/Header'
 import { FaPhoneVolume,FaEnvelope,FaLocationDot,FaTwitter,FaDiscord } from "react-icons/fa6";
 import { CiInstagram } from "react-icons/ci";
 import { useForm, SubmitHandler } from "react-hook-form"
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+// import { Label } from "@/components/ui/label"
+// import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 type Inputs = {
     example: string
     exampleRequired: string
@@ -74,7 +74,7 @@ function Page() {
            <input type="email" placeholder="Email" className="px-0 py-2 text-sm border-b border-slate-400 w-60 outline-none max-md:w-full focus:border-[#9E0C39]" {...register("email")} />
            <input type="number" placeholder="Phone number" className="px-0 py-2 text-sm border-b border-slate-400 w-60 outline-none max-md:w-full focus:border-[#9E0C39]" {...register("phoneNumber")} />
             </div>
-
+{/* 
            <div className='flex flex-col gap-2 w-full text-[#011C2A]'>
             <h5 className='font-semibold text-[#011C2A]'>Select Subject?</h5>
             <RadioGroup defaultValue="1" className='flex gap-4 font-light text-lg flex-wrap'>
@@ -94,7 +94,7 @@ function Page() {
         <Label htmlFor="r4" className='cursor-pointer font-normal'>General Inquiry</Label>
       </div>
     </RadioGroup>
-           </div>
+           </div> */}
            <input type="text" placeholder="Write your message." className="px-0 py-2 w-full text-sm border-b border-slate-400 mt-10 outline-none focus:border-[#9E0C39]" {...register("message")} />
            <div className='w-full flex items-center justify-end'>
            <input type="submit" value='Send Message' className="px-6 py-1 border border-[#9E0C39]  rounded-sm cursor-pointer bg-[#9E0C39] text-white duration-150 text-center my-4" />

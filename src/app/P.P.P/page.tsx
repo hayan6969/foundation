@@ -16,7 +16,7 @@ function page() {
   <div className='flex max-md:flex-col gap-4 item-center w-full'>
   <div className='flex flex-col text-black w-full gap-4'>
   <h3 className='text-3xl font-semibold text-[#9E0C39]'>Our Vision</h3>
-    <p className='text-lg max-lg:text-base'>At the Purple Paw Project, we are committed to ensuring that individuals escaping domestic violence do not have to sacrifice the safety of their cherished pets. Disturbingly, 40% of those facing domestic abuse feel unable to leave their situation due to concerns for their animals. Furthermore, 25% of survivors return to abusive environments because they worry about their pets welfare. The Red Orchard Foundation is taking steps to make a difference.
+    <p className='text-lg max-lg:text-base 2xl:text-xl'>At the Purple Paw Project, we are committed to ensuring that individuals escaping domestic violence do not have to sacrifice the safety of their cherished pets. Disturbingly, 40% of those facing domestic abuse feel unable to leave their situation due to concerns for their animals. Furthermore, 25% of survivors return to abusive environments because they worry about their pets welfare. The Red Orchard Foundation is taking steps to make a difference.
     </p>
   </div>
     <div className='w-full rounded-md overflow-hidden'>
@@ -29,14 +29,14 @@ function page() {
     </div>
   <div className='flex flex-col gap-4 text-black w-full'>
   <h3 className='text-3xl font-semibold text-[#9E0C39] leading-snug'>How Our Program Operates</h3>
-    <p className='text-lg max-lg:text-base'>When a survivor reaches out for assistance, our team promptly mobilizes to help. We  figure out what the best option for them is, foster of their animal, finding them a pet friendly shelter, or providing the animals a place at a boarding facility. We contact everyone in our network enabling the survivor to concentrate on rebuilding their life. Foster placements can last up to 120 days, during which we also help survivors prepare for life going forward.
+    <p className='text-lg max-lg:text-base 2xl:text-xl'>When a survivor reaches out for assistance, our team promptly mobilizes to help. We  figure out what the best option for them is, foster of their animal, finding them a pet friendly shelter, or providing the animals a place at a boarding facility. We contact everyone in our network enabling the survivor to concentrate on rebuilding their life. Foster placements can last up to 120 days, during which we also help survivors prepare for life going forward.
     </p>
   </div>
   </div>
   <div className='flex max-md:flex-col gap-4 item-center w-full '>
   <div className='flex flex-col gap-4 text-black w-full'>
   <h3 className='text-3xl font-semibold text-[#9E0C39] leading-snug'>The Healing Power of Pets</h3>
-    <p className='text-lg max-lg:text-base'>The bond between people and their pets is invaluable, providing both emotional support and physical health benefits. For survivors of domestic violence, this relationship can be a vital source of comfort in times of trauma. Studies reveal that nearly 70% of domestic violence victims own pets, with many reporting that their animals have suffered abuse at the hands of their abuser. This stark reality underscores the significance of our program, as approximately 48% of survivors hesitate to leave an abusive situation if they cannot take their pet with them.
+    <p className='text-lg max-lg:text-base 2xl:text-xl'>The bond between people and their pets is invaluable, providing both emotional support and physical health benefits. For survivors of domestic violence, this relationship can be a vital source of comfort in times of trauma. Studies reveal that nearly 70% of domestic violence victims own pets, with many reporting that their animals have suffered abuse at the hands of their abuser. This stark reality underscores the significance of our program, as approximately 48% of survivors hesitate to leave an abusive situation if they cannot take their pet with them.
 
     </p>
   </div>
@@ -50,7 +50,7 @@ function page() {
     </div>
   <div className='flex flex-col gap-4 text-black w-full'>
   <h3 className='text-3xl font-semibold text-[#9E0C39] leading-snug'>Ending the Cycle of Control</h3>
-    <p className='text-lg max-lg:text-base'>Abusive partners often manipulate the bond between victims and their pets as a tactic for control and isolation. The Purple Paw Project aims to dismantle this cycle by providing a safe haven for pets, enabling survivors to escape without the additional burden of worrying about their animal&apos;s safety. With only 15% of domestic violence shelters in the United States accommodating pets, our initiative is at the forefront of driving necessary change.
+    <p className='text-lg max-lg:text-base 2xl:text-xl'>Abusive partners often manipulate the bond between victims and their pets as a tactic for control and isolation. The Purple Paw Project aims to dismantle this cycle by providing a safe haven for pets, enabling survivors to escape without the additional burden of worrying about their animal&apos;s safety. With only 15% of domestic violence shelters in the United States accommodating pets, our initiative is at the forefront of driving necessary change.
     </p>
   </div>
   </div>
